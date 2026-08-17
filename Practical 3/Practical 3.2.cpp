@@ -3,10 +3,10 @@ using namespace std;
 int main()
 {
     int n,i;
-    cout<<"Enter number of elements: ";
+    cout<<"Enter number Color Codes: ";
     cin>>n;
     int arr[n];
-    cout<<"Enter elements: ";
+    cout<<"Enter Color Codes: ";
     for(i=0;i<n;i++)
         cin>>arr[i];
     int count0=0,count1=0,count2=0;
@@ -34,6 +34,11 @@ int main()
     for(i=0;i<count2;i++){
         arr[index] = 2;
         index++;
+    }
+   cout << "Sorted Colour Codes: ";
+    for(i=0;i<n;i++)
+    {
+        cout<<arr[i]<<" ";
     }
     return 0;
 }
